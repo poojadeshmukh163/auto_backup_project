@@ -2,8 +2,7 @@
 This project automates the process of backing up a directory on a Linux server (e.g., AWS EC2). It zips the target directory, uploads it to Google Drive using rclone, and applies retention rules to manage storage space. Additionally, it supports webhook notifications to inform about backup status.
 
 🧾 Overview
-
-    📦 Creates scheduled, timestamped backups of a project folder
+   📦 Creates scheduled, timestamped backups of a project folder
     ☁️ Uploads backups to Google Drive via rclone
     🔁 Enforces smart backup rotation (daily, weekly, monthly)
     🔔 Sends optional webhook notifications (e.g., to Slack, Discord, or webhook.site)
@@ -12,16 +11,13 @@ This project automates the process of backing up a directory on a Linux server (
 ⚙️ How to Install & Configure rclone
 
 1. Install rclone
-
 curl https://rclone.org/install.sh | sudo bash
 
 2. Run configuration wizard
-
    rclone config
 
    
 3. Create a new remote named gdrive:
-
     Choose n (new remote)
     Name: gdrive
     Choose drive as the storage (usually option 22)
@@ -64,7 +60,6 @@ crontab -e
 
 Choose nano as the editor (if prompted).
  Add Cron Job Entry
-
 0 2 * * * /home/ubuntu/backup_script.sh >> /home/ubuntu/backup.log 2>&1
 
  Save and Exit In nano:
