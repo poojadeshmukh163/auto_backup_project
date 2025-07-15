@@ -39,6 +39,7 @@ rclone copy test.txt gdrive:
 Check Google Drive for test.txt.
 
 Paste code from backup.py file.
+
 ✅ Run the Script Manually
 
   Make the script executable
@@ -62,8 +63,7 @@ execute the script
 crontab -e
 
 Choose nano as the editor (if prompted).
-
-    Add Cron Job Entry
+ Add Cron Job Entry
 
 0 2 * * * /home/ubuntu/backup_script.sh >> /home/ubuntu/backup.log 2>&1
 
@@ -75,10 +75,8 @@ Press Ctrl + X to exit
 You should see:
 
 crontab: installing new crontab
-
 Verify Cron is Set
 
-
-   crontab -l
+crontab -l
 
 
