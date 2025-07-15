@@ -24,7 +24,7 @@ curl https://rclone.org/install.sh | sudo bash
 
     Choose n (new remote)
     Name: gdrive
-    Choose drive as the storage (usually option 18)
+    Choose drive as the storage (usually option 22)
     Use n for auto config (headless setup)
     On your local machine, run:
 
