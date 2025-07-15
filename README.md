@@ -1,5 +1,6 @@
 🔄 Automated Backup and Rotation Script with Google Drive Integration
 This project automates the process of backing up a directory on a Linux server (e.g., AWS EC2). It zips the target directory, uploads it to Google Drive using rclone, and applies retention rules to manage storage space. Additionally, it supports webhook notifications to inform about backup status.
+
 🧾 Overview
 
     📦 Creates scheduled, timestamped backups of a project folder
@@ -67,7 +68,8 @@ You should see:
 
 crontab: installing new crontab
 
-    Verify Cron is Set
+Verify Cron is Set
+
 
    crontab -l
 
