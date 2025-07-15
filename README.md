@@ -31,6 +31,7 @@ curl https://rclone.org/install.sh | sudo bash
  Paste the resulting token JSON into your EC2 config prompt.
 
  4. Test upload
+
  echo "hello world" > test.txt
 rclone copy test.txt gdrive:
 
@@ -39,23 +40,15 @@ Check Google Drive for test.txt.
 Paste code from backup.py file.
 ✅ Run the Script Manually
 
-    Make the script executable
+Make the script executable
 
-chmod +x backup.py
+chmod +x backup_script.sh
 
-    Run the script
+execute the script
 
-python3 backup.py
-
-    Optional:
-
-python3 backup.py --no-notify
+./backup_script.sh
 
 ⏲️ Automate with Cron
-
-To run the backup every day at 2:00 AM:
-
-    Open Crontab
 
 crontab -e
 
@@ -76,6 +69,6 @@ crontab: installing new crontab
 
     Verify Cron is Set
 
-crontab -l
+   crontab -l
 
 
