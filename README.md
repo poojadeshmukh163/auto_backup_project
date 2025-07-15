@@ -41,6 +41,14 @@ Check Google Drive for test.txt.
 Paste code from backup.py file.
 ✅ Run the Script Manually
 
+  Make the script executable
+
+chmod +x backup.py
+
+ Run the script
+
+python3 backup.py
+
 Make the script executable
 
 chmod +x backup_script.sh
